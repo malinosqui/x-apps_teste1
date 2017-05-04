@@ -1,0 +1,30 @@
+h1 {
+    font-size: 2em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.table {
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 70px;
+}
+
+#next,
+#previous {
+    line-height: 8px;
+}
+
+#next>i,
+#previous>i {
+    font-size: 32px;
+}

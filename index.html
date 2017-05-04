@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste x-apps - Grid</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns centered">
+                <h1>Lista de usuários</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns centered">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <span>Página atual 
+                    <select id="page">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </span>
+            </div>
+            <div class="six columns right">
+                <button class="button-primary" id='previous'> <i class="material-icons">keyboard_arrow_left</i></button>
+                <button class="button-primary" id='next'>  <i class="material-icons">keyboard_arrow_right</i> </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/axios.min.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
